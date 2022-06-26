@@ -1,0 +1,150 @@
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    background: azure;
+    color: hotpink;
+
+}
+
+input:not([type="checkbox"]){
+appearance: none;
+border: none;
+outline: none;
+background: none;
+
+}
+
+section{
+    margin: 2rem 1.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    
+    /* padding: 11rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    color: hotpink;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.info .title{
+    display: flex;
+}
+
+.title input{
+    margin-left: 1rem;
+    color: hotpink;
+    font-size: 1.5rem;
+}
+
+.create-todo input[type="text"]{
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 1.5rem 1.5rem;
+    color:hotpink;
+    background-color: azure;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.create-todo input[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 1.5rem 1.5rem;
+    color:hotpink;
+    background-color: azure;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+.create-todo input[type="submit"]:hover{
+    opacity: 0.5;
+    background: hotpink;
+    color: rgb(240, 229, 229);
+    
+}
+.todo-list .list{
+    margin: 1rem 0;
+
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.todo-item label{
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.todo-item .content{
+    flex: 1 1 0%;
+
+}
+
+.todo-item input[type="text"]{
+    font-size: 1.25rem;
+    color: hotpink;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+}
+
+.actions button{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: hotpink;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.actions button:hover{
+    opacity: 0.77;
+}
+
+.edit{
+    background-color: azure;
+    margin-right: 0.5rem;
+
+}
+
+.delete{
+    background-color: azure;
+
+}
+
+.todo-done .todo-item .content input{
+    text-decoration: line-through;
+    color: black;
+}
